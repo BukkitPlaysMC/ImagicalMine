@@ -1969,7 +1969,7 @@ Item::APPLE => 4,Item::MUSHROOM_STEW => 6,Item::BEETROOT_SOUP => 5,Item::BREAD =
 					break;
 				}
 				
-				$this->setSkin($packet->skin, $packet->slim);
+				$this->setSkin($packet->skin, $packet->skinName);
 				
 				$this->server->getPluginManager()->callEvent($ev = new PlayerPreLoginEvent($this, "Plugin reason"));
 				if($ev->isCancelled()){
