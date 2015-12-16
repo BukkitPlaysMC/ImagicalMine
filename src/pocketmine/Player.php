@@ -1964,10 +1964,7 @@ Item::APPLE => 4,Item::MUSHROOM_STEW => 6,Item::BEETROOT_SOUP => 5,Item::BREAD =
 					break;
 				}
 				
-				if(strlen($packet->skin) !== 64 * 32 * 4 and strlen($packet->skin) !== 64 * 64 * 4){
-					$this->close("", "disconnectionScreen.invalidSkin");
-					break;
-				}
+
 				
 				$this->setSkin($packet->skin, $packet->slim);
 				
