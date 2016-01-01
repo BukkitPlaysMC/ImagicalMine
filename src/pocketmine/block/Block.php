@@ -712,7 +712,7 @@ class Block extends Position implements Metadatable{
 		try{
 			$block = self::$list[$id];
 			if($block !== null){
-				$block = new $block($meta);
+				$block = new Block($meta);
 			}else{
 				$block = new Block($id, $meta);
 			}
