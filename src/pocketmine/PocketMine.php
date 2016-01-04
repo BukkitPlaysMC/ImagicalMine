@@ -24,7 +24,7 @@
  *
 */
 
-namespace {
+namespace pocketmine;
 	function safe_var_dump(){
 		static $cnt = 0;
 		foreach(func_get_args() as $var){
@@ -67,7 +67,7 @@ namespace {
 	function dummy(){
 
 	}
-}
+
 
 namespace pocketmine {
 	use pocketmine\utils\Binary;
